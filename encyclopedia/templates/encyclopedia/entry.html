@@ -1,0 +1,16 @@
+{% extends "encyclopedia/layout.html" %}
+(%load static %)
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block nav %}
+    <div>
+        <a href=/edit/{{title}} class = 'toolbar-links'>Edit Page</a>
+    </div>
+{% endblock %}
+
+{% block body %}
+    {{ text |safe}}
+{% endblock %}
